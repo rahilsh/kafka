@@ -1,4 +1,4 @@
-package com.uber.pubsub;
+package com.rsh.pubsub;
 
 /** @author Rahil */
 public class Message<T> {
