@@ -3,13 +3,13 @@ package com.rsh.pubsub;
 /** @author Rahil */
 public class Message<T> {
 
-  public Message(Object body) {
-    this.body = (T) body;
+  public Message(T body) {
+    this.body = body;
   }
 
   public T getBody() {
     return body;
   }
 
-  private T body;
+  private final T body;
 }

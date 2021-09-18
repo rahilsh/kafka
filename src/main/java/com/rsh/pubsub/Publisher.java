@@ -16,14 +16,9 @@ public class Publisher<T> implements Runnable {
   @Override
   public void run() {
     for (int i = 0; i < 100; i++) {
-      Message<T> message = new Message<>("Message:" + i);
-      System.out.println(name + " Publishing: " + message.getBody().toString());
-      queue.add(message);
-      try {
-        Thread.sleep(200);
-      } catch (InterruptedException e) {
-        e.printStackTrace();
-      }
+      Message<String> message = new Message<>("Message:" + i);
+      System.out.println(name + " Publishing: " + message.getBody());
+      queue.add((Message<T>) message);
     }
   }
 }

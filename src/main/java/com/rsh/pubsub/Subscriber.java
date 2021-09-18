@@ -17,7 +17,7 @@ public class Subscriber<T> implements Runnable {
   public void run() {
     while (true) {
       if (queue.size() > 1) {
-        System.out.println(name + " Subscribing: " + queue.poll().getBody());
+        System.out.println(name + " fetched: " + queue.poll().getBody());
         try {
           Thread.sleep(300);
         } catch (InterruptedException e) {
