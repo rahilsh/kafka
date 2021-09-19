@@ -1,10 +1,10 @@
 # pub-sub
 
-Simple in-memory publisher-subscriber app
+Simple publisher-subscriber app with one in memory implementation
 
 Features
 1. Publisher and subscriber are decoupled
-2. Generic inteface for initializing publishers and subscribers
+2. Generic interface for initializing publishers and subscribers
 
 Entities
 1. Publisher
