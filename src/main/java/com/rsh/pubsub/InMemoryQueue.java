@@ -6,7 +6,7 @@ import java.util.concurrent.BlockingQueue;
 /** @author Rahil */
 public class InMemoryQueue<T> implements Queue<Message<T>> {
 
-  BlockingQueue<Message<T>> queue = new ArrayBlockingQueue<>(1024);
+  private final BlockingQueue<Message<T>> queue = new ArrayBlockingQueue<>(1024);
 
   @Override
   public void put(Message<T> message) {

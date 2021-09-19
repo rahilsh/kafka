@@ -1,7 +1,5 @@
 package com.rsh.pubsub;
 
-import java.util.concurrent.BlockingQueue;
-
 /** @author Rahil */
 public class PublisherImpl<T> implements Publisher<T> {
 
