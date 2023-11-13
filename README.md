@@ -1,6 +1,6 @@
 # pub-sub
 
-Simple publisher-subscriber app with one in memory implementation
+Simple publisher-subscriber app with in memory implementation
 
 Features
 1. Publisher and subscriber are decoupled
